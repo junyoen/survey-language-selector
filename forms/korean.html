@@ -2,28 +2,52 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSegyKAxkI3S4-EqTma2nWFyGvXVsu-_Rt9kV-L1y8a_X_VQ5g/viewform?embedded=true" width="640" height="3379" frameborder="0" marginheight="0" marginwidth="0">로드 중…</iframe>">
-    <title>한국어 설문조사로 이동 중...</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한국어 설문조사</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
             display: flex;
             justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
             background-color: #f5f5f5;
         }
-        .message {
-            text-align: center;
+        .form-container {
+            width: 100%;
+            max-width: 800px;
+            min-height: 100vh;
+            background-color: white;
             padding: 20px;
+        }
+        iframe {
+            width: 100%;
+            border: none;
+            height: 100vh;
+        }
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-bottom: 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .back-button:hover {
+            background-color: #45a049;
         }
     </style>
 </head>
 <body>
-    <div class="message">
-        <p>한국어 설문조사 페이지로 이동 중입니다...</p>
-        <p>자동으로 이동하지 않는 경우 <a href="<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSegyKAxkI3S4-EqTma2nWFyGvXVsu-_Rt9kV-L1y8a_X_VQ5g/viewform?embedded=true" width="640" height="3379" frameborder="0" marginheight="0" marginwidth="0">로드 중…</iframe>">여기를 클릭</a>하세요.</p>
+    <div class="form-container">
+        <a href="../index.html" class="back-button">← 언어 선택으로 돌아가기</a>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSegyKAxkI3S4-EqTma2nWFyGvXVsu-_Rt9kV-L1y8a_X_VQ5g/viewform?embedded=true" 
+                frameborder="0" 
+                marginheight="0" 
+                marginwidth="0">
+            로드 중...
+        </iframe>
     </div>
 </body>
 </html>
